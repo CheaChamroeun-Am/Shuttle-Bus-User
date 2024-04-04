@@ -1,0 +1,29 @@
+.custom-link::after {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: white;
+    position: relative;
+    top: 16.5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .custom-link:hover::after,
+  .active-link .custom-link::after {
+    opacity: 1;
+}
+
+.custom-linkp::after {
+  content: '';
+  display: block;
+  height: 3px;
+  background-color: white;
+  position: relative;
+  top: 0px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.custom-linkp:hover::after,
+.active-linkp .custom-linkp::after {
+  opacity: 1;
+}
